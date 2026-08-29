@@ -1,0 +1,11 @@
+{
+  "name": "gaia-agent",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Motor enxuto da Gaia: memoria persistente e injecao de contexto e personalidade.",
+  "scripts": {
+    "check": "node --check runtime/memoria.mjs && node --check runtime/personalidade.mjs && node --check runtime/hook.mjs && node --check runtime/gaia.mjs",
+    "test": "node --test testes/*.test.mjs"
+  }
+}
