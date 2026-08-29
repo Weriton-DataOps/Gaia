@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "gaia-persona-v1",
+  "name": "Mentora Botanica",
+  "status": "active",
+  "contract": "./gaia-persona-v1.md",
+  "promotion": null,
+  "supersedes": null,
+  "channels": {
+    "plugin": "active",
+    "chat": "planned",
+    "realtime": "planned"
+  }
+}

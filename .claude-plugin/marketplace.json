@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "gaia-hub",
+  "description": "Marketplace da Gaia, agente pessoal da Larissa",
+  "owner": {
+    "name": "Weriton - GR Group"
+  },
+  "plugins": [
+    {
+      "name": "gaia",
+      "displayName": "Gaia",
+      "source": "./",
+      "description": "Personalidade, contexto e memoria da Gaia, mentora de agronomia e meio ambiente.",
+      "homepage": "https://github.com/Weriton-DataOps/Gaia",
+      "repository": "https://github.com/Weriton-DataOps/Gaia",
+      "keywords": ["gaia", "agronomia", "meio-ambiente", "personal-agent"],
+      "category": "productivity"
+    }
+  ]
+}

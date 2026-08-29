@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "gaia",
+  "version": "0.1.0",
+  "displayName": "Gaia",
+  "description": "Agente pessoal da Larissa: mentora carinhosa de agronomia, legislacao florestal, QGIS e CAR.",
+  "author": {
+    "name": "Weriton - GR Group"
+  },
+  "homepage": "https://github.com/Weriton-DataOps/Gaia",
+  "repository": "https://github.com/Weriton-DataOps/Gaia",
+  "keywords": [
+    "gaia",
+    "agronomia",
+    "legislacao-florestal",
+    "qgis",
+    "car",
+    "mentora",
+    "personal-agent"
+  ]
+}
