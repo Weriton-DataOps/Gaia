@@ -1,7 +1,31 @@
+<p align="center">
+  <img src="assets/capa.png" alt="Gaia — mentora botânica de IA" width="820">
+</p>
+
 # Gaia 🌱
+
+```text
+              ✦     ❀     ✦
+           \     \   |   /     /
+        ❀     \.   \  |  /   ./     ❀
+            `.    \\\ | /// .'
+       ✦ -----(      ( ◕ )      )----- ✦
+            .'    /// | \\\  `.
+           /     '  / | \  '     \
+         ❀      /    |    \      ❀
+               /     |     \
+         \\    \     |     /    //
+          \\.___\    |    /___.//
+                 \  \|/  /
+                  \__|__/
+                    |||
+                   /root\
+```
 
 A agente pessoal da **Larissa** — uma mentora carinhosa e empolgada de **agronomia, legislação
 florestal, QGIS e CAR**, que faz o trabalho difícil e explica tudo de um jeito simples.
+
+> _"Eu cuido dos dados. Você cuida da terra."_
 
 ## O que é
 
@@ -26,8 +50,9 @@ porque a Larissa não é programadora e não precisa ser.
 
 ## Estado
 
-**v0.1 — esqueleto de identidade.** A alma (personalidade, contrato, skill) está de pé. O motor
-(memória + contexto + operador) é o próximo bloco — ver `docs/ESTRUTURA.md`.
+**v0.2 — o motor no ar.** A alma (personalidade, contrato, skill) e o **hipocampo** (memória
+persistente + hook que injeta personalidade e contexto a cada turno + operador) estão de pé e
+verificados — 2 testes verdes e smoke ponta-a-ponta. Detalhes em `docs/ESTRUTURA.md`.
 
 ---
 Feita com carinho pelo Weriton, com a ajuda do Omni. 🌎
