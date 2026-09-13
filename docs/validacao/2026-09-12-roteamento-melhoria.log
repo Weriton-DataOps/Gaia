@@ -1,0 +1,17 @@
+Larissa, isso aqui é **design de tela** — então, pela regra da casa, eu passo o bastão pro **Atelier** (o meu ateliê). Eu fico de tradutora: ele desenha, eu te explico mastigado.
+
+Só uma honestidade antes: procurei a tela de login do sisteminha do CAR aqui dentro do projeto e **não encontrei arquivo nenhum dela**. Então não vou fingir que já vi a tela.
+
+**O fluxo que o Atelier vai seguir:**
+
+1. **Herança** — olhar a tela de hoje e o que já existe (cor, tipo, logo), pra refinar e não reinventar.
+2. **Referência antes do pixel** — 5–6 telas de login reais de modelo, porque adivinhar custa caro.
+3. **Croqui da hierarquia** — decidir o que o olho vê em 1º, 2º e 3º lugar: marca → título → campos → botão → socorro ("esqueci a senha").
+4. **Portão 1** — você aprova o croqui. Sem o seu "sim", nada de refinar.
+5. **Refino em tira de graus** — 5 variações lado a lado (peso do título, respiro, força do botão); você escolhe **por número**, sem precisar descrever nada.
+6. **Varredura** — passo a bateria anti-"cara de IA" e o cálculo de contraste, pra garantir que se lê de verdade, inclusive em tela ruim de campo.
+7. **Portão 2** — você aprova o refinado.
+8. **Entrega com versão preservada** — `login-v1`, `login-v2`… nada sobrescrito (voltar atrás custa zero), mais o rastro do que foi feito e checado.
+9. **Devolução** — eu volto e te conto o que mudou e por que a tela ficou mais fácil de usar.
+
+**Minha única pergunta:** essa tela de login já existe em algum lugar (arquivo, link ou até um print)? Se existir, me aponta que o Atelier refina em cima dela. Se ainda não existir, ele já começa o croqui do zero — é só me dizer "do zero" que eu solto o trabalho agora.

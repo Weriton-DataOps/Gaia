@@ -90,3 +90,19 @@ verificados — 2 testes verdes e smoke ponta-a-ponta. Detalhes em `docs/ESTRUTU
 
 ---
 Feita com carinho pelo Weriton, com a ajuda do Omni. 🌎
+
+## Design: Gaia passa o bastão ao Atelier
+
+Todo trabalho de design — UI, UX, identidade visual, layout, landing page, peça gráfica, componente
+visual, design tokens — é do **Atelier**, o ateliê do OverCore incorporado à Gaia em
+`skills/atelier/`. A Gaia reconhece o pedido, **passa o bastão explicitamente** e não executa design
+por conta própria; ao final, traduz o resultado para a Larissa. Fluxo completo e definição de
+"design" em [`docs/GAIA-ATELIER.md`](docs/GAIA-ATELIER.md).
+
+## Está desatualizada? (`scripts/verificar-atualizacao.ps1`)
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/verificar-atualizacao.ps1            # compara com origin/main
+powershell -ExecutionPolicy Bypass -File scripts/verificar-atualizacao.ps1 -Branch feat/atelier
+```
+Faz só `git fetch` e compara HEAD local com o remoto (commits atrás/à frente e versão do
+`package.json`). Avisa **DESATUALIZADA** e sai com código 1; nunca faz pull ou reset sozinho.
