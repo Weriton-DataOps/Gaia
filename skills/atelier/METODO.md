@@ -58,9 +58,21 @@ contrato do hub em `contrato/ATELIER.md`. Verbos **evidenciados literalmente** n
 | `/julgar` | src/main/studio/atelier | veredito da versão (rascunho/em-revisao/aprovado/descartado) |
 | `/linhagem` | linhagem.ts (9 ocorrências) | árvore de versões, procedência, palco |
 
-Os outros nove **não foram localizados e não foram inventados**. Enquanto o Studio não publicar a
-lista, o Atelier da Gaia opera com estes seis e registra no rastro qualquer verbo novo que rodar
-(o design.md manda exatamente isso: o verbo tem que aparecer, não ser digitado).
+### Lápide dos nove verbos fantasmas (veredito de 2026-09-12)
+Os outros nove **nunca existiram na fonte**: `design.md:87` diz "15 verbos (/croqui, /refinar,
+/varrer…)" e para nas reticências. Não há lista em nenhum arquivo do Studio. **Os seis acima são o
+conjunto vigente** e cobrem os três usos prioritários do proprietário, sem verbo órfão e sem verbo
+inventado:
+
+| uso prioritário | verbos que o atendem |
+|---|---|
+| auditoria de design | `/varrer` (placar das quatro leis) + `/julgar` (veredito) |
+| execução de melhoria | `/refinar` (sobre o croqui ou a peça existente; portão 2) |
+| produção de alta qualidade | `/croqui` + `/tipografar` + `/julgar` (portões 1 e 2) |
+| rastro de tudo | `/linhagem` (versões, procedência, palco) |
+
+Ninguém cria verbo novo. Se o Studio um dia publicar a lista, ela entra por aqui com fonte literal;
+até lá, "15" é número de marketing, não de método.
 
 ## A lei do rastro (o trabalho tem que aparecer)
 Toda peça entregue vem com o **rastro do trabalho**, visível:
