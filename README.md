@@ -98,3 +98,11 @@ visual, design tokens — é do **Atelier**, o ateliê do OverCore incorporado �
 `skills/atelier/`. A Gaia reconhece o pedido, **passa o bastão explicitamente** e não executa design
 por conta própria; ao final, traduz o resultado para a Larissa. Fluxo completo e definição de
 "design" em [`docs/GAIA-ATELIER.md`](docs/GAIA-ATELIER.md).
+
+## Está desatualizada? (`scripts/verificar-atualizacao.ps1`)
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/verificar-atualizacao.ps1            # compara com origin/main
+powershell -ExecutionPolicy Bypass -File scripts/verificar-atualizacao.ps1 -Branch feat/atelier
+```
+Faz só `git fetch` e compara HEAD local com o remoto (commits atrás/à frente e versão do
+`package.json`). Avisa **DESATUALIZADA** e sai com código 1; nunca faz pull ou reset sozinho.

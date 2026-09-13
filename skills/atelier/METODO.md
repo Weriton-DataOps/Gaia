@@ -44,9 +44,23 @@ Os verbos existem e aparecem, mas não são cerimônia: não se pede "digite /re
 "monta o croqui" e o Atelier registra o verbo que rodou.
 
 ## Verbos do Atelier
-O Studio fala em 15 verbos; os evidenciados literalmente na fonte lida são `/croqui`, `/refinar`,
-`/varrer`, `/tipografar`. A lista completa dos 15 **não foi localizada como lista** na origem e não
-foi inventada aqui — pendência registrada. Regra: todo verbo que rodar aparece no rastro.
+O Studio fala em "15 verbos" (`docs/produto/design.md:87`), mas **a lista de 15 não existe em lugar
+nenhum da fonte** — só a menção com reticências. Busca feita em 2026-09-12 (somente leitura):
+`design.md`, `src/**/*.ts`, `docs/**/*.md`, `src/main/studio/atelier/*`, `src/renderer`, e o
+contrato do hub em `contrato/ATELIER.md`. Verbos **evidenciados literalmente** na origem:
+
+| verbo | onde aparece | o que faz no Atelier |
+|---|---|---|
+| `/croqui` | design.md:87,105; atelier.ts | primeira forma da peça; abre o portão 1 |
+| `/refinar` | design.md:87,105; atelier.ts | matéria/movimento em tira de graus; abre o portão 2 |
+| `/varrer` | design.md:87; src | varredura das quatro leis, gera o placar |
+| `/tipografar` | design.md:105 | escala e ritmo de tipo |
+| `/julgar` | src/main/studio/atelier | veredito da versão (rascunho/em-revisao/aprovado/descartado) |
+| `/linhagem` | linhagem.ts (9 ocorrências) | árvore de versões, procedência, palco |
+
+Os outros nove **não foram localizados e não foram inventados**. Enquanto o Studio não publicar a
+lista, o Atelier da Gaia opera com estes seis e registra no rastro qualquer verbo novo que rodar
+(o design.md manda exatamente isso: o verbo tem que aparecer, não ser digitado).
 
 ## A lei do rastro (o trabalho tem que aparecer)
 Toda peça entregue vem com o **rastro do trabalho**, visível:
