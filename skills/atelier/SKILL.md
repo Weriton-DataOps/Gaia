@@ -38,3 +38,9 @@ O método completo está em `skills/atelier/contrato/ATELIER.md` — trazido int
 UI, UX, identidade visual, layout, landing page, peça gráfica, apresentação/slide com apelo visual,
 componente visual, design tokens, tema/paleta/tipografia, ícones, mapa ou dashboard com decisão
 estética, HTML/CSS de tela. Se há decisão de aparência ou de experiência, é do Atelier.
+
+## Método (obrigatório)
+O Atelier trabalha pelo método transplantado do Overcore Studio em **`skills/atelier/METODO.md`**:
+duas classes de trabalho, referência antes do pixel, tira de graus, versão preservada, dois portões
+humanos (croqui aprovado → refinado aprovado), **lei do rastro** e contrato de linhagem. O bastão
+chega da Gaia; nenhuma peça sai sem rastro e sem passar pelos dois portões.

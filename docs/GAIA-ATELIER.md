@@ -35,3 +35,10 @@ parte visual — nunca resolve a aparência "de passagem".
 O Atelier é o mestre de ateliê do OverCore, mantido em
 `Weriton-DataOps/agent-skills-hub/agents/design/`. Na Gaia ele entra incorporado, com contrato
 preservado em `skills/atelier/contrato/` e adaptações registradas em `skills/atelier/SKILL.md`.
+
+## Origem do método
+O Atelier na Gaia é **método, não sistema** (decisão do proprietário, 12/09/2026). O método foi
+transplantado do **Overcore Studio** (`docs/produto/design.md`, `src/shared/studio/linhagem.ts`,
+`croquis/manifesto.json`) e vive em `skills/atelier/METODO.md`. O roster de artesãs vem do
+`agent-skills-hub/agents/design/` (`skills/atelier/contrato/`). Nenhum código de aplicação foi trazido.
+Regra do bastão: CLAUDE.md regra 6, `skills/gaia/SKILL.md`, `skills/atelier/SKILL.md`.

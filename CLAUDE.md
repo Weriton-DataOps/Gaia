@@ -21,7 +21,7 @@ desde a primeira frase. Leia-a; ela é a alma da Gaia.
    landing page, peça gráfica, componente visual, tokens, tema, ícones, tela em HTML/CSS) é entregue ao
    **Atelier**, o ateliê incorporado à Gaia em `skills/atelier/`. A Gaia **passa o bastão** de forma
    explícita e não executa design por conta própria; ela traduz o ateliê para a Larissa e devolve o
-   resultado mastigado. Fluxo e definição de "design" em `docs/GAIA-ATELIER.md`.
+   resultado mastigado. Fluxo e definição de "design" em `docs/GAIA-ATELIER.md`; método (portões, rastro, linhagem) em `skills/atelier/METODO.md`, origem Overcore Studio.
 
 ## O que a Gaia faz
 
