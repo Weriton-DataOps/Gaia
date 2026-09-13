@@ -51,3 +51,55 @@ Os Read subsequentes trazem `/varrer`, `/refinar`, `/julgar` (SKILL/METODO do At
 ## Não provado / alegação
 - Não foi verificado se o Atelier aplicou literalmente cada portão de `/julgar`; a saída final não nomeia os verbos (`-p` só imprime a mensagem final).
 - Overcore Studio não foi tocado (nenhum comando o referenciou).
+
+---
+
+## 6. Retomada — passada real de `/varrer` + `/julgar` (2026-09-12, noite)
+
+Estado conferido antes: `main` local e `origin/main` em `38bd59e`, árvore limpa, PR #1 `MERGED`. Nada repetido.
+
+`verificar-atualizacao.ps1` (nova execução):
+```
+[Gaia] versao local 0.3.0 (38bd59e) | origin/main 0.3.0 (38bd59e)
+[Gaia] Atualizada.
+exit=0
+```
+
+### Achado: verbo no início do prompt quebra
+`claude -p "/julgar ..."` → `Unknown command: /julgar`, `num_turns=0`. Os verbos do Atelier são vocabulário da skill, não slash commands do harness. **Uso correto: verbo dentro da frase** ("Atelier, rode /varrer e depois /julgar na peça ...").
+
+### Rodada válida (`--max-turns 12`, claude-sonnet-5, stream-json)
+exit=0, `num_turns=8`, custo 0,307 USD. Ferramentas: 2 Bash, 5 Read. Arquivos lidos:
+`skills/atelier/{SKILL.md, METODO.md, contrato/ATELIER.md, contrato/AUDITORIA.md}` e
+`Overcore Studio/docs/produto/design.md` (somente leitura). Sem chamada `Skill` explícita nesta rodada; o roteamento veio pelo prompt de sistema da Gaia + leitura direta.
+
+Saída literal:
+```
+## Rastro
+- **Verbo:** `/varrer` → `/julgar` (peça: botão primário — bg `#2563EB`, texto branco 14px/500, padding 8x16, raio 6px, sem foco/hover)
+- **Artesã convocada:** nenhuma. Varredura é função do mestre-artesão, não se terceiriza. Titulares de Etapa 5 do contrato (`baseline-ui`, `fixing-accessibility`) foram **recusados**: não existem no hub local da Gaia (sem `skills_index.json` — vai direto ao improviso, e aqui nem improviso coube, o teste é textual).
+- **Skills:** nenhuma carregada. `anti-slop-review` (catálogo da sessão) fica de fora por escopo — ela pontua A1-A30, o pedido foi as quatro leis de `design.md`.
+- **Modelo:** Sonnet 5 fez a varredura e o juízo. Sem conflito de gosto que justificasse Opus.
+
+## Placar das quatro leis (`design.md`, Overcore Studio — fonte única, só leitura)
+1. **Sem brilho / profundidade** — PASSA por ausência: fill sólido, zero gradiente, zero glow. Ressalva: também zero sombra — não há profundidade nenhuma construída, só a ausência do defeito.
+2. **Transparência contida** — PASSA: opacidade não declarada em lugar nenhum, corpo 100% opaco.
+3. **Textura obrigatória** — **FALHA**: fill plano sem ruído, veia ou relevo. É exatamente o "lê como renderizado, não como existente" que a lei descreve.
+4. **Densidade baixa** — PASSA: peça única, nada a subtrair.
+
+**Placar: 3/4 PASSA, 1 FALHA (lei 3), 1 ressalva (lei 1).**
+
+## Portão 1 — croqui aprovado
+**AGUARDA-HUMANO.** Evidência: a peça chegou como valor final (hex, px, raio) — pulou o esboço tosco da Etapa 3. Nenhuma aprovação de croqui está registrada nesta conversa.
+
+## Portão 2 — refinado aprovado
+**FALHOU.** Evidência objetiva, antes de qualquer olho humano: o checklist de estados da Etapa 5 (hover/focus/empty/loading/error) reprova de cara — o próprio pedido admite "sem estado de foco nem hover". Foco ausente não é estilo, é falha de acessibilidade (WCAG 2.4.7, teclado cego). Some à lei 3 acima: dois achados bloqueantes.
+
+## Veredito
+**em-revisão.** Não é rascunho (já tem valores finais, não esboço) nem aprovado (dois achados concretos: textura zero, foco/hover ausentes) — falta corrigir e voltar pro portão 2; o portão 1 nem foi aberto por você ainda.
+```
+
+Portões, como reportados pelo agente: **Portão 1 = AGUARDA-HUMANO** (peça chegou com valores finais, croqui não aprovado); **Portão 2 = FALHOU** (sem foco/hover; lei 3 textura). Veredito **em-revisão**. Coerente com `METODO.md` (gates humanos inegociáveis) — em headless o portão humano só pode ficar aguardando, não passar.
+
+### Decisão sobre os 9 verbos fantasmas
+Registrada em `skills/atelier/METODO.md:61` ("Lápide dos nove verbos fantasmas"): **removidos por inexistência** — `design.md:87` fala em "15 verbos" e para nas reticências; nenhuma lista existe na fonte. Conjunto vigente: `/croqui`, `/refinar`, `/varrer`, `/tipografar`, `/julgar`, `/linhagem`. Prova complementar em `docs/validacao/2026-09-12-roteamento-prova-e-veredito-verbos.md`.
